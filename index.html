@@ -3,188 +3,181 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Bangla Market - E-Commerce Revolution</title>
+    <title>Bangla Market - Shop the Best Deals</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/color/32/shopping-cart.png" />
     <style>
-      /* General styling */
-      body {
-        font-family: "Arial", sans-serif;
+      * {
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
+        box-sizing: border-box;
       }
-
-      header {
-        background-color: #ff6f61;
-        color: white;
-        padding: 30px 0;
-        text-align: center;
-      }
-
-      .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .stats {
-        display: flex;
-        justify-content: space-around;
-        margin: 40px 0;
-      }
-
-      .stats div {
-        text-align: center;
-      }
-
-      .stats div h3 {
-        font-size: 30px;
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f9;
         color: #333;
+        line-height: 1.6;
+        overflow-x: hidden;
       }
-
-      .stats div p {
-        font-size: 18px;
-        color: #555;
-      }
-
-      .download-button {
-        display: inline-block;
-        padding: 15px 40px;
-        font-size: 20px;
-        background-color: #4caf50;
+      header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #ff6f61, #d84f29);
         color: white;
-        text-align: center;
-        border-radius: 50px;
-        text-decoration: none;
-        margin: 40px auto;
-        transition: background-color 0.3s ease;
-      }
-
-      .download-button:hover {
-        background-color: #45a049;
-      }
-
-      .section-title {
-        text-align: center;
-        font-size: 28px;
-        margin-top: 50px;
-        font-weight: bold;
-      }
-
-      .section-description {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 10px;
-        color: #555;
-      }
-
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
         position: relative;
-        bottom: 0;
-        width: 100%;
+        overflow: hidden;
       }
-
-      .trusted-logo {
-        max-width: 120px;
+      header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+      }
+      header > * {
+        position: relative;
+        z-index: 2;
+      }
+      h1 {
+        font-size: 3.5em;
+        font-weight: 700;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      }
+      .tagline {
+        font-size: 1.5em;
+        font-weight: 300;
+        margin: 10px 0 20px;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 15px 35px;
+        background: #6e8efb;
+        color: white;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 1.2em;
+        font-weight: 600;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         margin-top: 20px;
       }
-
-      .stats div h3,
-      .section-title {
-        color: #ff6f61;
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: #ff8c69;
       }
-
-      .section-description {
-        color: #333;
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        margin: 40px 0;
+      }
+      .feature-card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+      }
+      .feature-card img {
+        width: 50px;
+        margin-bottom: 10px;
+      }
+      .feature-card h3 {
+        color: #2c3e50;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .feature-card p {
+        color: #888;
+      }
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+        border-top: 4px solid #ff6f61;
+      }
+      footer a {
+        color: #ff8c69;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      footer a:hover {
+        text-decoration: underline;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2.5em;
+        }
+        .tagline {
+          font-size: 1.2em;
+        }
+        .cta-button {
+          padding: 12px 25px;
+          font-size: 1em;
+        }
+        .container {
+          padding: 20px;
+        }
       }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <h1>Welcome to Bangla Market</h1>
-      <p>Your trusted online shopping platform</p>
+      <h1>Bangla Market</h1>
+      <p class="tagline">Shop the Best Deals on Quality Products</p>
+      <a href="https://github.com/shuvajitmaitra/bangla-market-mobile-app/releases/download/1.0.0/Bangla.Market.apk" class="cta-button"
+        >Download the App</a
+      >
+      <p style="font-size: 0.9em; margin-top: 10px">Click to download the Bangla Market App on your device!</p>
     </header>
 
     <div class="container">
-      <section>
-        <h2 class="section-title">About Bangla Market</h2>
-        <p class="section-description">
-          A revolution in the e-commerce industry since 2016. The best online shopping experience, made simple.
-        </p>
+      <section class="features">
+        <div class="feature-card">
+          <img src="https://img.icons8.com/color/48/000000/shopping-cart.png" alt="Shop" />
+          <h3>Shop Anytime</h3>
+          <p>Browse and shop your favorite products at your convenience.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://img.icons8.com/ios/50/000000/lock.png" alt="Secure Payment" />
+          <h3>Secure Payments</h3>
+          <p>Enjoy safe and secure payment options for every purchase.</p>
+        </div>
+        <div class="feature-card">
+          <img src="https://img.icons8.com/ios/50/000000/truck.png" alt="Fast Delivery" />
+          <h3>Fast Delivery</h3>
+          <p>Get your orders delivered quickly to your doorstep.</p>
+        </div>
       </section>
-      <!-- App Download Button -->
-      <section>
-        <a
-          href="https://github.com/shuvajitmaitra/bangla-market-mobile-app/releases/download/1.0.0/Bangla.Market.apk"
-          class="download-button"
-          >Download Our App</a
+
+      <section class="cta-section" style="text-align: center; margin-top: 40px">
+        <a href="https://github.com/shuvajitmaitra/bangla-market-mobile-app/releases/download/1.0.0/Bangla.Market.apk" class="cta-button"
+          >Download Now</a
         >
-      </section>
-
-      <section class="stats">
-        <div>
-          <h3>50,000+</h3>
-          <p>Happy Customers</p>
-        </div>
-        <div>
-          <h3>1 Million+</h3>
-          <p>Products Sold</p>
-        </div>
-        <div>
-          <h3>64</h3>
-          <p>Clients Covered</p>
-        </div>
-        <div>
-          <h3>8+ Years</h3>
-          <p>Years of Experience</p>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Why Shop from Bangla Market?</h2>
-        <p class="section-description">
-          Through our experience and strong supplier network, we provide the best products with excellent service.
-        </p>
-      </section>
-
-      <section class="stats">
-        <div>
-          <h3>50,000+</h3>
-          <p>Happy Customers</p>
-        </div>
-        <div>
-          <h3>Regular Offers & Gifts</h3>
-          <p>We value your loyalty</p>
-        </div>
-        <div>
-          <h3>International Brands</h3>
-          <p>We bring global brands to you</p>
-        </div>
-        <div>
-          <h3>Free Delivery</h3>
-          <p>Enjoy free delivery on selected items</p>
-        </div>
-      </section>
-
-      <section>
-        <h2 class="section-title">Join Bangla Market Today!</h2>
-        <p class="section-description">
-          Be part of a global marketplace, trusted by millions around the world. Enjoy reliable service, great prices, and premium customer
-          support.
-        </p>
-      </section>
-
-      <section>
-        <div class="section-title">Trusted by Millions</div>
-        <img src="path_to_trusted_logo.jpg" alt="Trusted Logo" class="trusted-logo" />
       </section>
     </div>
 
     <footer>
+      <p>
+        Visit our <a href="https://staging.banglamarket.us/" target="_blank">Bangla Market</a> or
+        <a href="https://staging.banglamarket.us/contact">Contact Us</a> for more info.
+      </p>
       <p>&copy; 2025 Bangla Market. All rights reserved.</p>
     </footer>
   </body>
