@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Bangla Market - E-Commerce Revolution</title>
     <style>
+      /* General styling */
       body {
-        font-family: Arial, sans-serif;
+        font-family: "Arial", sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f4f4f4;
@@ -16,13 +17,14 @@
       header {
         background-color: #ff6f61;
         color: white;
-        padding: 20px 0;
+        padding: 30px 0;
         text-align: center;
       }
 
       .container {
         width: 80%;
         margin: 0 auto;
+        padding: 20px;
       }
 
       .stats {
@@ -35,18 +37,27 @@
         text-align: center;
       }
 
+      .stats div h3 {
+        font-size: 30px;
+        color: #333;
+      }
+
+      .stats div p {
+        font-size: 18px;
+        color: #555;
+      }
+
       .download-button {
-        display: block;
-        width: 200px;
-        height: 50px;
+        display: inline-block;
+        padding: 15px 40px;
+        font-size: 20px;
         background-color: #4caf50;
         color: white;
         text-align: center;
-        line-height: 50px;
-        font-size: 18px;
-        margin: 30px auto;
-        border-radius: 25px;
+        border-radius: 50px;
         text-decoration: none;
+        margin: 40px auto;
+        transition: background-color 0.3s ease;
       }
 
       .download-button:hover {
@@ -55,7 +66,7 @@
 
       .section-title {
         text-align: center;
-        font-size: 24px;
+        font-size: 28px;
         margin-top: 50px;
         font-weight: bold;
       }
@@ -64,6 +75,7 @@
         text-align: center;
         font-size: 18px;
         margin-top: 10px;
+        color: #555;
       }
 
       footer {
@@ -71,14 +83,23 @@
         color: white;
         text-align: center;
         padding: 10px;
-        position: absolute;
-        width: 100%;
+        position: relative;
         bottom: 0;
+        width: 100%;
       }
 
       .trusted-logo {
-        max-width: 100px;
+        max-width: 120px;
         margin-top: 20px;
+      }
+
+      .stats div h3,
+      .section-title {
+        color: #ff6f61;
+      }
+
+      .section-description {
+        color: #333;
       }
     </style>
   </head>
@@ -94,6 +115,10 @@
         <p class="section-description">
           A revolution in the e-commerce industry since 2016. The best online shopping experience, made simple.
         </p>
+      </section>
+      <!-- App Download Button -->
+      <section>
+        <a href="YOUR_APP_DOWNLOAD_LINK_HERE" class="download-button">Download Our App</a>
       </section>
 
       <section class="stats">
@@ -147,10 +172,6 @@
           Be part of a global marketplace, trusted by millions around the world. Enjoy reliable service, great prices, and premium customer
           support.
         </p>
-      </section>
-
-      <section>
-        <a href="YOUR_APP_DOWNLOAD_LINK_HERE" class="download-button">Download Our App</a>
       </section>
 
       <section>
